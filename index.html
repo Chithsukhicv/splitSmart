@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SplitSmart – Smart Expense Split</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💸 SplitSmart</h1>
+    <p>Smart expense splitting with instant PayPal Sandbox payments</p>
+  </header>
+
+  <main>
+    <section id="add-expense">
+      <h2>Add Expense</h2>
+      <form id="expense-form">
+        <input type="text" id="desc" placeholder="Description (e.g. Dinner)" required>
+        <input type="number" id="amount" placeholder="Amount (₹)" required>
+        <input type="text" id="payer" placeholder="Paid by (e.g. Rahul)" required>
+        <input type="text" id="participants" placeholder="Participants (comma separated)" required>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section id="summary">
+      <h2>Summary</h2>
+      <ul id="summary-list"></ul>
+    </section>
+
+    <section id="payment">
+      <h2>Settle Up</h2>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+<script src="Add your Sandbox Client ID here"></script>
+<script src="payment.js"></script>
+
+</body>
+</html>
 
